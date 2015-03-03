@@ -70,12 +70,18 @@ class CentralCorridor(Scene):
 class LaserWeaponArmory(Scene):
 
 	def enter(self):
-		print "Enter 1 digit code. FAST!"
+		print "You enter the Laser Weapon Armory and immediately notice"
+		print "the locker that contains the super-particle bomb which you"
+		print "found a couple of days ago in the bathroom of a strip club."
+		print "Yeah, I know it sounds weird... Unfortunately there is a"
+		print "keypad on the door and you forgot the code that opens it..."
+		print "AGAIN. Luckily it is only a 1 digit code. What's your guess?"
 		# code = "%d%d%d" % (randint(1,9), randint(1,9), randint(1,9))
-		code = "%d" % (randint(1,9))
+		code = "%d" % (randint(0,9))
 		guess = raw_input("[keypad]> ")
 		guesses = 1
 		
+		# 10 guesses before failure
 		while guess != code and guesses < 10:
 			print "BZZZEDDDD!"
 			guesses += 1

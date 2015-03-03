@@ -1,3 +1,5 @@
+# use inheritance
+
 # class Parent(object):
 
 	# def implicit(self):
@@ -30,6 +32,8 @@
 
 # dad.altered()
 # son.altered()
+
+# use composition
 
 class Other(object):
 	
